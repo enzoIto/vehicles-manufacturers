@@ -1,5 +1,5 @@
 import unittest
-from script import generate_data
+from script_csv import generate_data
 
 class TestGenerateData(unittest.TestCase):
     def test_data_length(self):
