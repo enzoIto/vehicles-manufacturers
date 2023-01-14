@@ -1,6 +1,8 @@
-## Question 2
+# Question 2
 
 The file `script_csv.py` contain the main script of the question. Satisfying all requirements.
+
+This script generates a CSV file with a specified number of rows and columns of random data.
 
 ### If you had to generate a large number of rows (millions or more), is there anything you would do differently to handle this? 
 
@@ -26,6 +28,16 @@ Here are few things I would do
 
 - Follow best practices: I would make sure that the code follows best practices such as using functions to break up code, using appropriate data types and structures, and avoiding unnecessary global variables. Probably, I would also use type hints to make the script type safe.
 
+# How to run
+
+### Arguments
+- `-r`, `--rows`: Number of rows to generate in the CSV file (default: 1000000)
+- `-f`, `--file`: Filename for the CSV file (default: "random_data.csv")
+- `-c`, `--chunk_size`: Number of rows per chunk when writing to the CSV file (default: 10000)
+
+### Example
+
+`python generate_data.py -r 1000000 -f data.csv -c 10000`
 
 
 
